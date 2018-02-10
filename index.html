@@ -4,22 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--Let browser know website is optimized for mobile-->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
     <title>Star Wars Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!--Import Google Icon Font-->
+    
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-<!-- Starting Modal -->
+
 <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -32,17 +31,17 @@
                     <p> Select your Jedi and then select your first enemy to begin. Battle you opponent by clicking the 'attack' button. Choose wisely or it may be your last battle!</p><p> Defeat all of Jedi and you and only you will be the last true Jedi. May the FORCE be with you!</p>
                 </div>
                  <div class="modal-footer">
-    <!--     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+    
         			<button type="button" class="btn btn-primary block-center" data-dismiss="modal">Prepare for Battle!</button>
       			</div>
             </div>
-            <!-- /.modal-content -->
+           
         </div>
-        <!-- /.modal-dialog -->
+        
     </div>
-    <!-- /.modal -->
+    
 <div  id='wrap'>
-    <!-- Title Header -->
+    
     <header>
         <div class="container-fluid">
             <div class="row">
@@ -53,7 +52,7 @@
         </div>
     </header>
    
-   <!-- Battle Zone Area -->
+   
     <div class="container-fluid gameplaySection">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 text-center">
@@ -111,16 +110,17 @@
                     </div>
                 </div>
             </div>
-            <!-- Houses the attack and game over text -->
+            
             <div class="row">
             <div class="col-sm-12 col-md-2 col-lg-2"></div>
                 <div class="col-sm-12 col-md-8 col-lg-8 text-center">
-                                            <!-- This the area where the text gets updated as you play the game -->
+                                            
                         <div id="attackText"> </div>
-                        <!-- using this tag to create a button and use it to reset -->
+                       
                         <br>
+
                         <div id="gameOver">
-                      <!-- <button> </button>   -->    
+                        
                         </div>
                 </div>
                  <div class="col-sm-12 col-md-2 col-lg-2"></div>
@@ -168,16 +168,17 @@
 
     
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <!-- Latest compiled and minified JavaScript -->
+        
+
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
         <script type="text/javascript" src="assets/javascript/game.js"></script>
         <script type="text/javascript" src="assets/javascript/javascript.js"></script>
-        <!-- Created a background with scrolling images -->
+        
         <script type="text/javascript">
         $(document).ready(function() {
             $.backstretch(['assets/images/bg-kylo.jpg', 'assets/images/bg-ship4.jpg', 'assets/images/darth4.jpg','assets/images/plane1.jpg', 'assets/images/plane2.jpg'], {
