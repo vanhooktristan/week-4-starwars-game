@@ -1,3 +1,5 @@
+//Tristan Van Hook
+
 // Overall game is stored in object
 // game play object houses all functions  and additional variables of the game
 function reset() {
