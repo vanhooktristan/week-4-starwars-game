@@ -1,23 +1,3 @@
-// Author: Nigel Finley. August 2016. UT BOOTCAMP HW Assignment
-
-
-
-// 4. add the 'No enemy here' text when attack button is clicked
-// 6. figure out how to implement the  'wounded' piece
-// -Look at changing the font to more readable
-// Add bootstrap class to change the hover state of characters
-// makeimg bigger to strecth entire character and make text white
-
-
-
-
-
-// Improvements to make
-// Update the images to not show the background colors and spread across entire div
-// change text color to white and bold and then overlay over the image
-// change the positioning so that it flows better
-
-
 // Overall game is stored in object
 // game play object houses all functions  and additional variables of the game
 function reset() {
