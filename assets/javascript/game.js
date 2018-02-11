@@ -84,14 +84,7 @@ function reset() {
 		yourCurrentAttackPower: null,
 		winOccurred: false,
 
-	// create an array of battle sounds
-		battleSoundsArray: ['assets/audio/saberclash.mp3', 'assets/audio/saberclash1.mp3', 'assets/audio/saberclash2.mp3', 'assets/audio/saberclash3.mp3', 'assets/audio/saberclash4.mp3', 'assets/audio/saberclash5.mp3', 'assets/audio/saberclash6.mp3', 'assets/audio/spin1.mp3', 'assets/audio/spin2.mp3','assets/audio/spin3.mp3','assets/audio/spin4.mp3','assets/audio/spin5.mp3','assets/audio/spin6.mp3', 'assets/audio/swing1.mp3','assets/audio/swing2.mp3', ],
-		characherSelectSound: 'assets/audio/saberon.mp3',
-
-	// picks at random battle sound when the attack button is pressed
-		battleSoundPick: function() {
-	        return this.battleSoundsArray[Math.floor(Math.random() * this.battleSoundsArray.length)];
-	    },
+	
 
 	}
 };
@@ -101,10 +94,7 @@ function reset() {
 $(document).ready(function() {
 	reset();
 	// gets the link for the theme song to be played in the background
-	 var audioElement = document.createElement('audio');
-	 audioElement.autoplay = true;
-	 audioElement.loop = true;
-     audioElement.setAttribute('src', 'assets/audio/starwars.m4a');
+	 
 
      // displays the modal
   	$('#myModal').modal('show');
@@ -208,9 +198,6 @@ $(document).ready(function() {
 
     //STAGE 2: Selecting your character 
     $('#characterList').on('click', '.characterContainer', function(e) {
-    	// pause current audio to allow for battle sounds
-    	audioElement.pause();
-		// TODO: set the AUDIO to saberon.mp3
 
     	// references the characterList
     	var element = $(this);
@@ -225,9 +212,7 @@ $(document).ready(function() {
     	// This renders and updates all of the html elements 
     	render();
     	// adds a sound to selecting character
-    	var $audioCharacter = document.createElement('audio');
-                    $audioCharacter.setAttribute('src', gameObj.characherSelectSound);
-                    $audioCharacter.play();
+    	
     });
 
     // STAGE 3: select your enemy
@@ -245,10 +230,7 @@ $(document).ready(function() {
     	}
     	// This renders and updates all of the html elements 
     	render();
-    	// adds a sound to selecting character
-    	var $audioCharacter = document.createElement('audio');
-                    $audioCharacter.setAttribute('src', gameObj.characherSelectSound);
-                    $audioCharacter.play();
+    	
     });
 
     // STAGE 4: GAME PLAY. Click on ATTACK
@@ -273,9 +255,7 @@ $(document).ready(function() {
     	yourCharacter.healthPoints = yourCharacter.healthPoints - currentEnemy.counterAttackPower;
     	console.log ("enenemy health points: " + currentEnemy.healthPoints + ' your health: ' + yourCharacter.healthPoints);
 
-    	var $audioBattle = document.createElement('audio');
-                    $audioBattle.setAttribute('src', gameObj.battleSoundPick());
-                    $audioBattle.play();
+  
                     
 
 
